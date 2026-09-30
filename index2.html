@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura con Columnas</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 10px 20px;
+            border-bottom: 2px solid #333333;
+        }
+
+        .logo-pequeno {
+            width: 150px;
+            height: auto;
+            display: block;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #333333;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .boton-nav:hover {
+            background-color: #555555;
+            color: #ffffff;
+        }
+
+        .boton-nav.activo {
+            background-color: #666666;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #2a2a2a;
+            padding: 15px;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #1e1e1e;
+            padding: 15px;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+
+        footer {
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        h1, h2, h3, p {
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0;">Servicios</h1>
+
+            <nav class="barra-navegacion">
+                <a href="index.html" class="boton-nav">Inicio</a>
+                <a href="index2.html" class="boton-nav activo">Servicios</a>
+                <a href="index3.html" class="boton-nav">Contacto</a>
+            </nav>
+        </div>
+        <img src="https://media.tenor.com/03E5ID5RW0QAAAAi/taco-tacos.gif" alt="logo de mi sitio web" title="logo de la marca" class="logo-pequeno">
+    </header>
+
+    <main>
+        <aside>
+            <h3>Reseña de clientes</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYkul3FAvCqf0yn-NfmBxZxGbingpangLh82v-lnJjWg&s=10" alt="logo de mi sitio web" title="logo de la marca" class="logo-pequeno">
+            <br>
+            <h3>Promoción Red Bull</h3>
+            <p>¡Te da alas para aguantar todos los tacos! Pide tu Red Bull Energy Drink bien frío por solo $45 MXN para acompañar tu orden.</p>
+            <img src="https://media1.tenor.com/m/mqdUW86eBQIAAAAC/red-bull-energy-drink.gif" alt="anuncio red bull" title="red bull" class="logo-pequeno">
+        </aside>
+        <section>
+            <article>
+                <h2>Nuestros Servicios y Precios</h2>
+
+                <h3>1. Tacos Clásicos</h3>
+                <p>Servidos en doble tortilla de maíz hecha al momento con tu guisado favorito (Pastor, Suadero, Asada o Longaniza), acompañados de cebolla, cilantro y guacamole.</p>
+                <p><strong>Sencillo: $25 MXN | Con Queso: $35 MXN</strong></p>
+
+                <h3>2. Gringas y Quesadillas Especiales</h3>
+                <p>Deliciosa tortilla de harina o maíz con queso fundido y carne a tu elección, doraditas en el comal al punto perfecto.</p>
+                <p><strong>Precio: $65 MXN</strong></p>
+
+                <h3>3. Servicio para Eventos y Banquetes</h3>
+                <p>Llevamos el sazón de Tacos el Weroo a tus fiestas y reuniones. Incluye barra libre de carnes, salsas artesanales, complementos y taquero capacitado.</p>
+                <p><strong>Paquete Básico: $90 MXN p/p | Paquete VIP: $135 MXN p/p</strong></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Visitanos!!!</p>
+    </footer>
+</body>
+
+</html>
